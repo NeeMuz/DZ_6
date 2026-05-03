@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Wishes</title>
+</head>
+<body>
+    <h1>Список желаний</h1>
+
+    {% for w in wishes %}
+        <div>
+            <p>{{ w.name }}</p>
+            <p>{{ w.price }}</p>
+            <p>{{ w.status }}</p>
+            <p>{{ w.created_at }}</p>
+        </div>
+        <hr>
+    {% endfor %}
+</body>
+</html>
